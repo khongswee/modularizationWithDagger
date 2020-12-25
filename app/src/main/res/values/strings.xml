@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ModularizationWithDagger</string>
+    <string name="title_dynamicfeatureone">Module One</string>
+</resources>
