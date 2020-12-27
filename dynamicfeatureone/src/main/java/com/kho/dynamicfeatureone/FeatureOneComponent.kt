@@ -1,7 +1,7 @@
 package com.kho.dynamicfeatureone
 
-import com.elyeproj.base.ActivityScope
-import com.elyeproj.base.BaseComponent
+import com.kho.base.ActivityScope
+import com.kho.base.BaseComponent
 import dagger.Component
 
 @ActivityScope

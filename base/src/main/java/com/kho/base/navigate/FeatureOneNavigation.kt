@@ -1,8 +1,8 @@
-package com.elyeproj.base.navigate
+package com.kho.base.navigate
 
 import android.content.Intent
-import com.elyeproj.base.DynamicFeature
-import com.elyeproj.base.loadIntentOrNull
+import com.kho.base.DynamicFeature
+import com.kho.base.loadIntentOrNull
 
 object FeatureOneNavigation : DynamicFeature<Intent> {
 

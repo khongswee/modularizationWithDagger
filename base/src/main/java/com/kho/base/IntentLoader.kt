@@ -1,11 +1,11 @@
-package com.elyeproj.base
+package com.kho.base
 
 import android.content.Intent
 
 private const val PACKAGE_NAME = "com.kho.modularization"
 
 private fun intentTo(className: String): Intent =
-    Intent(Intent.ACTION_VIEW).setClassName(PACKAGE_NAME, className)
+    Intent(Intent.ACTION_VIEW).setClassName(BaseApplication.packageNameDynamic, className)
 
 internal fun String.loadIntentOrNull(): Intent? =
     try {

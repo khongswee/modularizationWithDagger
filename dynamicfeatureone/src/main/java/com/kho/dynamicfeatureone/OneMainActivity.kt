@@ -1,9 +1,9 @@
 package com.kho.dynamicfeatureone
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.elyeproj.base.BaseApplication
+import com.kho.base.BaseApplication
+import com.kho.dynamicfeatureone.databinding.ActivityOneMainBinding
 import javax.inject.Inject
 
 class OneMainActivity : AppCompatActivity() {
@@ -13,12 +13,13 @@ class OneMainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_one_main)
+        val binding = ActivityOneMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         DaggerFeatureOneComponent.builder()
             .baseComponent(BaseApplication.baseComponent)
             .build()
             .inject(this)
-        val message = featureOneDependent.getMessage()
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        val message = featureOneDependent.getLoginResponse()
+        binding.messageText.text = message
     }
 }

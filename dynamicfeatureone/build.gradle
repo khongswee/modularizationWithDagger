@@ -4,12 +4,12 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
 }
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.kho.dynamicfeatureone"
         minSdkVersion 25
         targetSdkVersion 30
         versionCode 1
@@ -27,6 +27,26 @@ android {
 
     buildFeatures {
         viewBinding true
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        stage {
+            versionCode 10
+            versionName "stage 1.7.2"
+            dimension "default"
+        }
+        dev {
+            versionCode 8
+            versionName "dev 1.5.1"
+            dimension "default"
+        }
+        prod {
+            versionCode 1
+            versionName "prod 1.0.0"
+            dimension "default"
+        }
     }
 }
 

@@ -1,7 +1,8 @@
-package com.elyeproj.base
+package com.kho.base
 
 class BaseNetwork(val name: String) {
-    override fun toString(): String {
-        return "BaseNetwork $name ${super.toString()} "
-    }
+    /*
+    / mock api login function
+     */
+    fun isLoginSuccess() = true
 }

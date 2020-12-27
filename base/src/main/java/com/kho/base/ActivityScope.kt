@@ -1,4 +1,4 @@
-package com.elyeproj.base
+package com.kho.base
 
 import javax.inject.Scope
 

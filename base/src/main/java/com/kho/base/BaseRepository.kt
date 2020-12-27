@@ -1,10 +1,8 @@
-package com.elyeproj.base
+package com.kho.base
 
-class BaseRepository(val name: String) {
-    override fun toString(): String {
-        return "BaseRepository $name ${super.toString()} "
-    }
-    fun getSomething():String{
-        return "${name}:----"
+class BaseRepository(private val name: String) {
+
+    fun getLoginInformation(): String {
+        return "Test Login feature success"
     }
 }

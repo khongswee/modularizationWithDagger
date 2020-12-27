@@ -1,13 +1,13 @@
 package com.kho.dynamicfeatureone
 
-import com.elyeproj.base.BaseNetwork
-import com.elyeproj.base.BaseRepository
+import com.kho.base.BaseNetwork
+import com.kho.base.BaseRepository
 import dagger.Module
 import dagger.Provides
 
 @Module
 class FeatureOneDependentModule {
     @Provides
-    fun appModel(baseRepository: BaseRepository,baseNetwork: BaseNetwork) =
-        FeatureOneDependent("from FeatureOneDependentModule",baseRepository,baseNetwork)
+    fun appModel(baseRepository: BaseRepository, baseNetwork: BaseNetwork) =
+        FeatureOneDependent("FeatureOne",baseRepository,baseNetwork)
 }
