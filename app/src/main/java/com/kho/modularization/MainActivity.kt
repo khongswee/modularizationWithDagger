@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
-            startActivity(FeatureOneNavigation.dynamicStart)
+//            startActivity(FeatureOneNavigation.dynamicStart)
+            throw RuntimeException("Test Crash") // Force a crash
         }
         binding.textVersion.text = getVersionName()
     }

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "4902780202",
+    "project_id": "modulrarization-dagger",
+    "storage_bucket": "modulrarization-dagger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4902780202:android:d7625f6b4ec0c3908cf253",
+        "android_client_info": {
+          "package_name": "com.kho.modularization"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4902780202-dgfq57813cjigq34ivbar9cu67mb34gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kho.modularization",
+            "certificate_hash": "0ea27b4fb4649544fea8970005ef4a75217e8d6d"
+          }
+        },
+        {
+          "client_id": "4902780202-8jlp81k2opj3f1jiv3frdl4mlnhemuii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHDYt-va3jqbMLi_jo-p2AewtXSqPPQHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4902780202-8jlp81k2opj3f1jiv3frdl4mlnhemuii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
