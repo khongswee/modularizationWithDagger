@@ -6,11 +6,6 @@
     <application
         android:theme="@style/Theme.ModularizationWithDagger">
         <activity android:name=".OneMainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
